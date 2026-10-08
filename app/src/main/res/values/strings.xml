@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Face Unlock</string>
+
+    <!-- Kept for the (now undeclared) legacy service sources that still compile. -->
+    <string name="accessibility_label">Face Unlock swipe</string>
+    <string name="accessibility_description">Dismiss the lock screen with an upward swipe once your face is recognized.</string>
+    <string name="notification_channel_name">Face unlock</string>
+    <string name="notification_title">Face unlock running</string>
+    <string name="notification_text">Watching for your face</string>
+    <string name="btn_start">开始识别</string>
+    <string name="btn_stop">停止识别</string>
+    <string name="btn_accessibility">打开无障碍服务设置</string>
+    <string name="enable_accessibility_first">提示: 请先开启本应用的无障碍服务</string>
+    <string name="recognition_started">已开始后台识别</string>
+    <string name="recognition_stopped">已停止识别</string>
+
+    <string name="status_idle">就绪</string>
+
+    <string name="btn_enroll">录入人脸</string>
+    <string name="btn_set_password">设置逃生密码</string>
+    <string name="btn_pin_home">设为本机默认桌面</string>
+    <string name="btn_go_home">跳转真实桌面</string>
+    <string name="btn_logs">查看日志</string>
+    <string name="btn_clear">清除已录入数据</string>
+
+    <string name="enroll_progress">录入中 %1$d/%2$d，请将面部对准前置摄像头</string>
+    <string name="enroll_success">录入成功</string>
+    <string name="enroll_failed">录入失败，请重试</string>
+    <string name="template_cleared">已清除人脸数据</string>
+    <string name="no_template">请先录入人脸</string>
+    <string name="need_camera_permission">需要相机权限</string>
+    <string name="camera_error">相机启动失败</string>
+
+    <string name="fake_desktop_hint">正在验证…</string>
+    <string name="fake_desktop_ready">就绪</string>
+    <string name="fake_desktop_fail">识别失败，稍后重试</string>
+    <string name="fake_desktop_bail">验证失败次数过多，即将放行</string>
+    <string name="pwd_title">输入逃生密码</string>
+    <string name="pwd_hint">逃生密码</string>
+    <string name="pwd_ok">密码正确</string>
+    <string name="pwd_wrong">密码错误</string>
+    <string name="pwd_empty">请先设置逃生密码</string>
+    <string name="pwd_set_title">设置逃生密码</string>
+    <string name="pwd_set_done">密码已设置</string>
+
+    <string name="self_check_fail_model">模型文件缺失</string>
+    <string name="self_check_fail_camera">缺少相机权限</string>
+    <string name="self_check_fail_password">未设置逃生密码</string>
+    <string name="self_check_pass">自检通过</string>
+
+    <string name="state_enrolled">已录入</string>
+    <string name="state_not_enrolled">未录入</string>
+    <string name="state_on">已开启</string>
+    <string name="state_off">未开启</string>
+    <string name="status_format">人脸: %1$s   密码: %2$s</string>
+
+    <string name="home_pinned">已设为本机默认桌面</string>
+    <string name="home_not_owner">非设备所有者，无法接管默认桌面</string>
+    <string name="home_unpinned_not_owner">非设备所有者，无法清除默认桌面角色</string>
+    <string name="home_launched">已跳转真实桌面</string>
+    <string name="home_pkg_saved">真实桌面包名已保存: %1$s</string>
+    <string name="home_pkg_missing">未找到真实桌面</string>
+
+    <string name="logs_placeholder">暂无日志</string>
+
+    <!-- Shizuku / Dhizuku authorization -->
+    <string name="btn_authorize">连接授权 (Shizuku / Dhizuku)</string>
+    <string name="btn_shizuku_owner">经 Shizuku 设为本机所有者</string>
+    <string name="priv_status">授权状态: %1$s</string>
+    <string name="priv_self_owner">设备所有者 (本机)</string>
+    <string name="priv_dhizuku">Dhizuku (%1$s)</string>
+    <string name="priv_none">未授权</string>
+    <string name="authorize_hint">请在弹出窗口中允许授权</string>
+    <string name="shizuku_granted">Shizuku 已授权</string>
+    <string name="shizuku_denied">Shizuku 授权失败</string>
+    <string name="shizuku_not_running">Shizuku 未运行，请先启动 Shizuku</string>
+    <string name="shizuku_need_permission">请先授予 Shizuku 权限</string>
+    <string name="shizuku_service_lost">Shizuku 服务连接断开</string>
+    <string name="owner_already_set">已具备设备所有者权限，无需重复设置</string>
+    <string name="owner_set_ok">已通过 Shizuku 设为本机设备所有者</string>
+    <string name="owner_set_failed">设置失败: %1$s</string>
+</resources>

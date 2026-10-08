@@ -1,0 +1,17 @@
+MobileFaceNet model (bundled)
+=============================
+
+File:   mobile_facenet.tflite
+Source: estebanuri/face_recognition  assets/mobile_face_net.tflite
+        https://raw.githubusercontent.com/estebanuri/face_recognition/master/android/app/src/main/assets/mobile_face_net.tflite
+
+I/O specification (verified with tflite_runtime):
+  input : "input"        -> [1, 112, 112, 3]  float32  NHWC
+  output: "embeddings"   -> [1, 192]          float32  (already L2-normalized)
+  preprocessing: (pixel - 127.5) / 128               (range [-1, 1])
+
+This is a standard single-input MobileFaceNet (not the siamese Qualcomm variant).
+MobileFaceNet.kt auto-detects NCHW/NHWC, single/dual input, and float32/uint8/int8.
+The Qualcomm hub only ships a float TFLite for this model; no int8/quantized TFLite
+asset exists there. If you want a (weight-quantized) int8 TFLite, run
+convert_int8_dynamic.py — it keeps float I/O but shrinks weights to int8.
